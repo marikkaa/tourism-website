@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tourism Website</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <h1 class="logo">NORTH MOUNTAIN</h1>
+      <ul class="nav-links">
+        <li><a class="active" href="#">Home</a></li>
+        <li class="drop-down">
+          <a href="#">Where To Go</a>
+          <ul class="drop-down-content">
+            <li>North Mountains</li>
+            <li>West Mountains</li>
+            <li>South Mountains</li>
+          </ul>
+        </li>
+
+        <li><a href="#">Where To Stay</a></li>
+        <li><a href="#">Plan A Trip</a></li>
+        <li><a class="btn-main" href="#">Book Now</a></li>
+      </ul>
+      <span class="menu-icon"
+        ><i class="fa fa-bars" style="font-size: 5vh"></i
+      ></span>
+    </nav>
+    <header>
+      <div class="header-content">
+        <h1>A WONDERFUL JOURNEY</h1>
+        <h4>Experience the natural beauty of the mountains at your own pace</h4>
+        <a class="btn-main" href="#">Find Your Adventure</a>
+      </div>
+    </header>
+
+    <section class="tours">
+      <div class="title">
+        <h1>Hiking Tours</h1>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <img src="./img/tours-01.jpg" alt="" />
+          <h4>North Mountains</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum hic
+            neque iusto animi eius ad placeat repellendus, consectetur
+            recusandae similique, sunt reprehenderit quod nihil debitis, itaque
+            esse dolorum aliquam ea voluptates eligendi.
+          </p>
+          <a href="#" class="btn-main">Choose A Tour</a>
+        </div>
+        <div class="col">
+          <img src="./img/tours-02.jpg" alt="" />
+          <h4>West Mountains</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
+            ex eveniet voluptates. Laboriosam ea numquam dolorum amet ullam
+            tempora harum, non doloremque, hic suscipit voluptatum odit?
+            Delectus doloribus quod sit unde sint sunt illo quis.
+          </p>
+          <a href="#" class="btn-main">Choose A Tour</a>
+        </div>
+        <div class="col">
+          <img src="./img/tours-03.jpg" alt="" />
+          <h4>South Mountains</h4>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error
+            aliquid nemo quidem libero ex deleniti, nulla sint, similique at
+            modi quisquam repellendus ea. Fugiat animi magni laborum facilis in
+            odio expedita vel blanditiis aliquid labore.
+          </p>
+          <a href="#" class="btn-main">Choose A Tour</a>
+        </div>
+      </div>
+    </section>
+    <section class="parks">
+      <div class="parks-content">
+        <h1>National Parks</h1>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis
+          quisquam reiciendis ea nam voluptatibus architecto rem necessitatibus
+          mollitia, totam quam incidunt veritatis voluptates tempora iusto fuga
+          omnis officiis asperiores, pariatur praesentium animi. Sunt labore
+          sapiente reprehenderit laborum laboriosam impedit nisi accusantium
+          itaque est aliquid.
+        </p>
+        <a href="#" class="btn-main">Learn More</a>
+      </div>
+    </section>
+    <section class="guide">
+      <div class="guide-row">
+        <div class="guide-col">
+          <h1>Hiking Guide</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+            eum doloremque minus perspiciatis optio et maiores ab recusandae
+            consequatur nam quasi ipsa magni adipisci hic quis culpa, facilis
+            fuga rerum, inventore, dolore itaque error! Quae esse error iusto
+            unde odio eius debitis neque nobis. Officiis quam placeat odit neque
+            corporis. Deserunt rem at tempore placeat. Lorem ipsum, dolor sit
+            amet consectetur adipisicing elit. Voluptate, placeat?
+          </p>
+          <a href="" class="btn-main">Learn More</a>
+        </div>
+        <div class="guide-col">
+          <div class="image-gallery">
+            <img src="./img/guide.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="footer">
+      <div class="footer-content">
+        <div>© 2000 North Mountain Hiking Tours.</div>
+        <div><a href="">Privacy Policy</a></div>
+        <div><a href="">Terms and Conditions</a></div>
+      </div>
+    </section>
+    <script>
+      const menuBtn = document.querySelector(".menu-icon");
+      const navLinks = document.querySelector(".nav-links");
+      menuBtn.addEventListener("click", () => {
+        navLinks.classList.toggle("mobile-menu");
+      });
+    </script>
+  </body>
+</html>

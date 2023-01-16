@@ -1,0 +1,392 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+  background-color: rgb(247, 247, 247);
+}
+
+/* Header */
+
+.logo {
+  margin-left: 25px;
+  color: rgba(255, 255, 255, 0.9);
+  cursor: default;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(./img/header.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-content {
+  color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  max-width: 94%;
+}
+
+.header-content h1 {
+  font-size: 8vmin;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.header-content h4 {
+  font-size: 3.5vmin;
+  margin-bottom: 70px;
+  font-weight: 500;
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-main {
+  background-color: rgb(237, 54, 121);
+  color: rgb(255, 255, 255);
+  padding: 10px 28px;
+  border-radius: 35px;
+  font-size: 2.5vmin;
+  transition: all 0.3s ease;
+}
+
+.btn-main:hover {
+  background-color: rgb(255, 93, 152);
+  color: rgb(255, 255, 255);
+  box-shadow: 2px 2px 4px rgba(39, 39, 39, 0.3);
+}
+
+.menu-icon {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  margin-right: 20px;
+  height: 40px;
+  cursor: pointer;
+  margin-top: auto;
+  display: none;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.active {
+  color: rgb(237, 54, 121);
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-links li {
+  margin: 0 30px;
+  text-decoration: none;
+}
+
+li a {
+  color: rgb(255, 255, 255);
+  font-size: 2.5vmin;
+}
+li a:hover {
+  color: rgb(237, 54, 121);
+}
+
+ul {
+  list-style-type: none;
+}
+
+.drop-down-content {
+  position: absolute;
+  display: none;
+}
+
+.drop-down:hover > .drop-down-content {
+  display: block;
+}
+.drop-down-content li {
+  margin: 15px auto;
+  font-size: 2vmin;
+  text-align: center;
+  color: white;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.drop-down-content li:hover {
+  color: rgb(237, 54, 121);
+}
+
+@media screen and (max-width: 1150px) {
+  .menu-icon {
+    display: block;
+  }
+  .navbar {
+    padding: 0;
+  }
+
+  .logo {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+  }
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    background-color: rgb(63, 60, 91);
+    margin-top: -900px;
+    transition: all 1s ease;
+  }
+
+  .nav-links li {
+    margin: 30px auto;
+  }
+
+  .drop-down:hover > .drop-down-content {
+    display: none;
+  }
+
+  .mobile-menu {
+    margin-top: 0px;
+  }
+  .btn-main {
+    font-size: 3.5vmin;
+  }
+  li a {
+    font-size: 3.5vmin;
+  }
+
+  .tours .col {
+    width: 100%;
+  }
+
+  .image-gallery img {
+    width: 100%;
+  }
+
+  .row,
+  .guide-row {
+    flex-direction: column;
+  }
+  .row .col {
+    margin: 20px auto;
+  }
+
+  .col-img {
+    max-width: 90%;
+  }
+
+  .parks-content {
+    width: 100%;
+    padding: 30px;
+    margin-top: 0;
+  }
+
+  .guide-row .guide-col {
+    max-width: 90%;
+  }
+
+  .guide-row .guide-col img {
+    width: 100%;
+  }
+
+  .footer-content {
+    flex-direction: column;
+  }
+}
+
+/* Tours */
+
+section {
+  width: 90%;
+  margin: 80px auto;
+}
+
+.title {
+  text-align: center;
+  font-size: 4vmin;
+  color: rgb(34, 34, 35);
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.row h4 {
+  color: rgb(34, 34, 35);
+}
+
+.row .col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tours .row {
+  margin-top: 50px;
+}
+
+.col {
+  width: 30%;
+}
+
+.col h4 {
+  font-size: 4vmin;
+  margin: 20px auto;
+}
+
+.col p {
+  color: rgb(34, 34, 35);
+  text-align: justify;
+}
+
+.tours .btn-main {
+  margin-top: 30px;
+}
+
+.col img {
+  width: 400px;
+}
+
+/* Nat Parks */
+
+.parks {
+  width: 100%;
+  height: 100vh;
+  background-image: url(./img/parks.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+}
+
+.parks-content {
+  width: 80%;
+  padding: 50px;
+  margin-top: 50px;
+  color: rgb(34, 34, 35);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: justify;
+}
+
+.parks-content h1 {
+  font-size: 7vmin;
+  margin-bottom: 30px;
+}
+.parks-content p {
+  color: rgb(34, 34, 35);
+}
+
+.parks-content .btn-main {
+  margin-top: 40px;
+}
+
+/* Hiking Guide */
+
+.guide-row {
+  display: flex;
+  width: 100vw;
+}
+
+.guide-col {
+  max-width: 50%;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.guide-col h1 {
+  font-size: 7vmin;
+  color: rgb(44, 44, 46);
+  margin-bottom: 30px;
+}
+
+.guide-col p {
+  margin: auto;
+  text-align: justify;
+  color: rgb(44, 44, 46);
+}
+
+.guide-col img {
+  width: 80%;
+}
+.guide-col .btn-main {
+  margin: 40px auto;
+}
+
+/* Footer */
+
+.footer {
+  width: 100%;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  background: rgb(34, 34, 35);
+}
+.footer-content {
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-content div {
+  margin: auto 30px;
+  font-size: 2.2vmin;
+}
+.footer-content div a {
+  font-size: 2.2vmin;
+  color: white;
+}
+.footer-content div a:hover {
+  color: rgb(255, 120, 170);
+}
+
+img {
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.1);
+}
